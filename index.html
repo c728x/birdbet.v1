@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jogo Caça ao Tesouro - Encontre o Baú Premiado e Ganhe R$1.000!">
+    <meta name="author" content="Seu Nome ou Empresa">
+    <meta name="keywords" content="caça ao tesouro, prêmio, jogo, baú premiado">
+    <title>BirdBet - Melhor casino</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.jpg" alt="Logo do jogo Caça ao Tesouro" class="logo">
+            <h1>CAÇA AO TESOURO</h1>
+            <p class="descricao">Encontre o Baú Premiado e Ganhe R$1.000! 💰✨</p>
+        </header>
+
+        <section class="tentativas-info">
+            <p class="tentativas">Tentativas Restantes: <span id="tentativas">3</span></p>
+        </section>
+
+        <section class="grid-container">
+            <div class="grid">
+                <div class="box" onclick="escolherBaú(0)"></div>
+                <div class="box" onclick="escolherBaú(1)"></div>
+                <div class="box" onclick="escolherBaú(2)"></div>
+                <div class="box" onclick="escolherBaú(3)"></div>
+                <div class="box" onclick="escolherBaú(4)"></div>
+                <div class="box" onclick="escolherBaú(5)"></div>
+                <div class="box" onclick="escolherBaú(6)"></div>
+                <div class="box" onclick="escolherBaú(7)"></div>
+                <div class="box" onclick="escolherBaú(8)"></div>
+            </div>
+        </section>
+
+        <section class="premio">
+            <h2>Prêmio Garantido:</h2>
+            <p class="valor">R$ 1.000,00</p>
+            <p class="mensagem">Você tem 3 tentativas para encontrar o baú premiado!</p>
+        </section>
+
+        <button id="reset" onclick="resetarJogo()">Jogar Novamente</button>
+    </div>
+
+    <audio id="clickSound" src="click.mp3"></audio>
+    <audio id="winSound" src="win.mp3"></audio>
+    <audio id="loseSound" src="lose.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
